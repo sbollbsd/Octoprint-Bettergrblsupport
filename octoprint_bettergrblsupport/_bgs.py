@@ -840,8 +840,9 @@ def add_to_notify_queue(_plugin, notifications):
 
 
 def is_laser_mode(_plugin):
-    _plugin._logger.debug("_bgs: is_laser_mode={}".format(int(float(_plugin.grblSettings.get(32)[0])) != 0))
-    return int(float(_plugin.grblSettings.get(32)[0])) != 0
+    #_plugin._logger.debug("_bgs: is_laser_mode={}".format(int(float(_plugin.grblSettings.get(32)[0])) != 0))
+    #return int(float(_plugin.grblSettings.get(32)[0])) != 0
+    return False
 
 
 def is_grbl_one_dot_one(_plugin):
